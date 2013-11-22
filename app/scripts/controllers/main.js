@@ -22,7 +22,9 @@ angular.module('pickupappApp')
       $scope.users = response.data;
     });
 
-    
+    $http.get('/data/games.json').then(function (response) {
+      $scope.games = response.data;
+    });    
 
     
   });
