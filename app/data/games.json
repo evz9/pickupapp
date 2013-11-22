@@ -1,0 +1,30 @@
+{ 
+  "id": 1, 
+  "title": "Ben's Awesome Game", 
+  "description": "asdf1",
+  "capacity": 4,
+  "creator_id": 1,
+  "sport_id": 1,
+  "location_id": 1,
+  "time": "17:00:00"
+},
+{ 
+  "id": 2, 
+  "title": "Al's Awesome Game", 
+  "description": "asdf2",
+  "capacity": 4,
+  "creator_id": 2,
+  "sport_id": 2,
+  "location_id": 1,
+  "time": "17:00:00"
+},
+{ 
+  "id": 3, 
+  "title": "Mike's Awesome Game", 
+  "description": "asdf3",
+  "capacity": 4,
+  "creator_id": 3,
+  "sport_id": 3,
+  "location_id": 1,
+  "time": "17:00:00"
+}
