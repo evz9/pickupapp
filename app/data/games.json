@@ -1,4 +1,4 @@
-{ 
+[{ 
   "id": 1, 
   "title": "Ben's Awesome Game", 
   "description": "asdf1",
@@ -27,4 +27,4 @@
   "sport_id": 3,
   "location_id": 1,
   "time": "17:00:00"
-}
+}]
