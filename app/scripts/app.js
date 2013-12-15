@@ -9,8 +9,19 @@ angular.module('pickupappApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        controller: 'HomeCtrl',
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+      })
+      .when('/games', {
+        templateUrl: 'views/games.html',
+        controller: 'GamesCtrl'
+      })
+      .when('/games/:id', {
+        templateUrl: 'views/gameDetails.html',
+        controller: 'GameIDCtrl',
       })
       .otherwise({
         redirectTo: '/'

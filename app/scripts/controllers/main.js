@@ -1,30 +1,20 @@
 'use strict';
 
+//Main controller for page
+
 angular.module('pickupappApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope, $location) {
 
-    $scope.awesomeThings = [
-      {
-        title:'HTML5 Boilerplate', 
-        description: "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites."
-      },
-      {
-        title:'AngularJS', 
-        description: "AngularJS is a toolset for building the framework most suited to your application development."
-      },
-      {
-        title: 'Karma',
-        description: 'Spectacular Test Runner for JavaScript.'
-      }
-    ];
+    $scope.test = function() {
+      $location.path('/games')
 
-    $http.get('/data/users.json').then(function (response) {
-      $scope.users = response.data;
-    });
-
-    $http.get('/data/games.json').then(function (response) {
-      $scope.games = response.data;
-    });    
-
+    }
     
-  });
+  }).controller('HomeCtrl', function($scope) {
+
+  }).controller('GamesCtrl', function($scope) {
+
+  }).controller('GameIDCtrl', function($scope, $routeParams) {
+    $scope.game = {};
+    $scope.game.id = $routeParams.id;
+  })
