@@ -1,0 +1,11 @@
+<div class="game-details">
+	<img src="sportpic()" alt="{{game.sport}}" />
+	<div class="game-info">
+		<h5>{{game.start}} - {{game.end}}</h5>
+		<span>{{game.location}}</span>
+		<div class="description"></div>
+		<div class="attending" ng-repeat="{guest in games.guests}">
+		</div>
+		<a ng-ref="#/:id/comments">Comments</a>
+	</div>
+</div>
