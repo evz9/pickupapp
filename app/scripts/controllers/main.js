@@ -2,19 +2,26 @@
 
 //Main controller for page
 
-angular.module('pickupappApp')
-  .controller('MainCtrl', function ($scope, $location) {
+var app = angular.module('pickupappApp');
+  
+app.controller('MainCtrl', function ($scope, $location) {
 
     $scope.test = function() {
-      $location.path('/games')
+      $location.path('/games');
 
     }
     
-  }).controller('HomeCtrl', function($scope) {
+  });
 
-  }).controller('GamesCtrl', function($scope) {
+app.controller('HomeCtrl', function($scope) {
 
-  }).controller('GameIDCtrl', function($scope, $routeParams) {
+  });
+
+app.controller('GamesCtrl', function($scope) {
+
+  });
+
+app.controller('GameIDCtrl', function($scope, $routeParams) {
     $scope.game = {};
     $scope.game.id = $routeParams.id;
-  })
+  });
