@@ -1,4 +1,4 @@
-angular.module('pickupappApp', [])
+angular.module('pickupappApp')
 	.directive('gameFilter', function() {
 		return {
 			restrict: 'E',
