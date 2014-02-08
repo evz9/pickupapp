@@ -1,8 +1,11 @@
 angular.module('pickupappApp')
-	.directive('gameFilter', function() {
+	.directive('game', function() {
 		return {
 			restrict: 'E',
-			templateUrl: 'views/game-filter-partial.html',
+			templateUrl: 'views/directive-game.html',
+			scope: {
+				details: '=',
+			},
 			controller: function($scope, $http) {
 				$http.get('/data/games.json').then(function (response) {
 			    	$scope.games = response.data;

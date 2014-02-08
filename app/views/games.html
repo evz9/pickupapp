@@ -1,8 +1,13 @@
-<div>
-<h2><a href="#/games/1">Supa Cool Game!</a></h2>
-<p>By: Static McStatic</p>
-<p>Description: Holy crap you should probably turn this into an ng-repeat. Also directivize it.</p>
+<div ng-hide="loaded">
+<h2>Loading games...</h2>
 </div>
-<div>
 
+<div ng-show="error">
+<p>There was an error loading the games. Please refresh the page and try again.</p>
+</div>
+
+<div ng-show="loaded">
+	<h2>Games</h2>
+	<game ng-repeat="game in games" details="game"></game>
+	
 </div>
