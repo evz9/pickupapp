@@ -27,3 +27,22 @@ angular.module('pickupappApp', [
           redirectTo: '/'
         });
     });
+
+var app = angular.module('pickupappApp');
+
+//Angular resources for retrieving models
+//Use query for searches without passing in an ID!
+
+app.factory('User', ['$resource', function($resource) {
+  return $resource('/user/:id', {id: '@id'},
+  {
+    'update': {method: 'PUT'}
+  });
+}]);
+
+app.factory('Game', ['$resource', function($resource) {
+  return $resource('/game/:id', {id: '@id'},
+  {
+    'update': {method: 'PUT'}
+  });
+}]);
