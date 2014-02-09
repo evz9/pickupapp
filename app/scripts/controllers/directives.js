@@ -7,14 +7,20 @@ angular.module('pickupappApp')
 				details: '=',
 			},
 			controller: function($scope, $http) {
-				$http.get('/data/games.json').then(function (response) {
-			    	$scope.games = response.data;
-			    });
+				$scope.commentsLoaded = false;
 
-				$scope.activeSearch = '';
-				$scope.search = function() {
-			        $scope.activeSearch = $scope.searchText;
-			     }
+				$scope.getDetails = function() {
+					$(".details_" + $scope.details.id).slideToggle();
+
+					//Dummy comment data
+					$scope.commentsLoaded = true;
+					$scope.comments = [
+						{name: 'Alex McPerson', message: 'd00d let us do tha sport'},
+						{name: 'Ben tha kool guy', message: 'ya lets go'},
+						{name: 'Mike Awesome', message: 'i can bench 200 w my pinky finger'}
+					];
+
+				}
 			}
 	}
 });

@@ -1,5 +1,16 @@
 <div class="game">
       <h3>{{details.title}}</h3>
-      <p>{{details.description}}</p>
-      <a href="#/games/{{details.id}}">More Details</a>
+      <p>Time: {{details.time}} | Location: {{details.location_id}}</p>
+      <a href="" ng-click="getDetails()">More Details</a>
+      <div class="details_{{details.id}}" style="display:none;">
+            <p>{{details.description}}</p>
+            <div class="comments" ng-show="commentsLoaded">
+                  <div class="comment" ng-repeat="comment in comments">
+                  {{comment.name}}: {{comment.message}}
+                  </div>
+            </div>
+            <div class="comments" ng-hide="commentsLoaded">
+            Loading comments...
+            </div>
+      </div>
 </div>
