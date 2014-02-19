@@ -23,6 +23,10 @@ angular.module('pickupappApp', [
         templateUrl: 'views/gameDetails.html',
         controller: 'GameIDCtrl',
       })
+       .when('/newGame', {
+        templateUrl: 'views/newGame.html',
+        controller: 'newGameCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });

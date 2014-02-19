@@ -77,3 +77,21 @@ body {
     border-bottom: 0;
   }
 }
+
+.plus-sign{
+  margin-right: 10px;
+}
+
+.inputBoxSmall{
+  width: 30px;
+  height: 20px;
+}
+
+.dropList{
+  width: 220px;
+
+}
+
+.dropPosition{
+  text-align: center;
+}

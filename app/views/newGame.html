@@ -1,0 +1,37 @@
+<ng-form name="newGame" ng-controller="newGameCtrl">
+<!--<label> Email </label>
+  <!--  <input type="number" ng-model="game.hour"
+     		 /> : <input type="number" ng-model="game.minute"> -->
+
+  <!--  <input type="email" ng-model="game.email" />-->
+    <label>Sport:</label><br>
+    <select class="dropList" ng-model="games" ng-options="g.sport for g in games" required>Sport</select> <br> 
+    <br>
+
+    <label>Location:</label><br>
+    <select class="dropList" ng-model="location" ng-options="l.name for l in location" required>Location
+    </select> <br> <br>
+
+    <label>Date : </label>
+    <input class="inputBoxSmall" requried> <b>/</b> 
+    <input class="inputBoxSmall" requried> <br> <br>
+
+    <label>Start</label>
+    <input class="inputBoxSmall" requried> <b>:</b> 
+    <input class="inputBoxSmall" required>   
+
+    <label>End</label>
+    <input class="inputBoxSmall" required> <b>:</b>
+    <input class="inputBoxSmall" required><br> <br>
+
+    <label>Participant Limit :</label> <br>
+    <input class="inputBoxSmall" type="text" ng-model="participants" ng-blur="checkParticipants()"/> <br> <br>
+    <button>Create Game</button>
+    <!--<input ng-model="game.date" required/><br>
+	<label>Start Time</label>   
+    <input type="startTime" ng-model="game.startTime" required /><br>
+    <label>End Time</label>
+    <input type="endTime" ng-model="game.endTime" required /><br>
+	<button ng-click="submitForm()">Create Game</button>-->
+
+</ng-form>
