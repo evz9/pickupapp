@@ -5,6 +5,7 @@
 
   
 app.controller('MainCtrl', function ($scope, $location) {
+	$scope.selections = {1: true, 3: true, 8: true};
 
     $scope.test = function() {
       $location.path('/games');

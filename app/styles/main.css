@@ -77,3 +77,56 @@ body {
     border-bottom: 0;
   }
 }
+
+
+
+/* Game directive styling */
+.game {
+  padding: 10px;
+  border: 1px black solid;
+}
+.game .icon-box {
+  float: left;
+}
+
+.game .details {
+  float: left;
+  padding-left:10px;
+}
+
+.game h3{
+  margin: 0;
+}
+
+.game .fake-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px black solid;
+  background: grey;
+  line-height: 60px;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+/* Sports selector styling */
+.sport {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  float: left;
+  border: 1px grey solid;
+  margin: 5px;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.selected {
+  background: #66FF66;
+  box-shadow:inset 2px 2px 2px 0px rgba(0, 0, 0, 0.4), 2px 2px 2px 0px rgba(255, 255, 255, 0.8);
+}
