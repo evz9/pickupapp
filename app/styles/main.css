@@ -78,8 +78,6 @@ body {
   }
 }
 
-
-
 /* Game directive styling */
 .game {
   padding: 10px;
@@ -129,4 +127,22 @@ body {
 .selected {
   background: #66FF66;
   box-shadow:inset 2px 2px 2px 0px rgba(0, 0, 0, 0.4), 2px 2px 2px 0px rgba(255, 255, 255, 0.8);
+}
+
+.plus-sign{
+  margin-right: 10px;
+}
+
+.inputBoxSmall{
+  width: 30px;
+  height: 20px;
+}
+
+.dropList{
+  width: 220px;
+
+}
+
+.dropPosition{
+  text-align: center;
 }

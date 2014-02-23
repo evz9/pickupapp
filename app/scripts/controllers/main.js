@@ -63,4 +63,28 @@ app.controller('GamesCtrl', function($scope, $http, Game) {
 app.controller('GameIDCtrl', function($scope, $routeParams) {
     $scope.game = {};
     $scope.game.id = $routeParams.id;
+});
+
+app.controller('newGameCtrl', function($scope) {
+       $scope.submitForm=function(){
+          console.log($scope.newGame)
+       }
+       $scope.checkParticipants = function() {
+          alert($scope.participants)
+       }
+       $scope.games = [
+       {sport: 'Soccer'},
+       {sport: 'Basketball'},
+       {sport: 'Football'},
+       {sport: 'Badminton'} 
+       ]
+
+       $scope.location = [
+       {name: 'SPAC'},
+       {name: 'Blom'},
+       {name: 'Patten'},
+       {name: 'Deering'},
+       {name: 'Lake Side Fields'}
+       ]
+
   });
